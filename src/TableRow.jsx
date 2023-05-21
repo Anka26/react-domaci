@@ -1,14 +1,13 @@
-
 import React from 'react';
 
 const TableRow = ({ t }) => {
-    return (
-      <tr>
-        <td>{t.amount}</td>
-        <td>{t.description}</td>
-        <td>{t.category}</td>
-      </tr>
-    );
-  };
+  return (
+    <tr>
+      <td style={{ padding: '10px' }}>{t.amount}</td>
+      <td style={{ padding: '10px' }}>{t.description}</td>
+      <td style={{ padding: '10px' }}>{t.category}</td>
+    </tr>
+  );
+};
 
-  export default TableRow;
+export default TableRow;
