@@ -4,6 +4,7 @@ import './App.css';
 import UnesiTransakciju from './UnesiTransakciju';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PrikaziTransakcije from './PrikaziTransakcije';
 function App() {
 
     const [transactions, setTransactions] = useState([]);
@@ -20,6 +21,7 @@ function App() {
     <div>
         <Navbar />
         <Routes>
+         <Route path="/" element={ <PrikaziTransakcije transactions={transactions}></PrikaziTransakcije>} />
           
           <Route path="/unesi" element={ <UnesiTransakciju onAdd={addTransaction}></UnesiTransakciju>} />
           
